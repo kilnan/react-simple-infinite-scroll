@@ -68,10 +68,10 @@ export class InfiniteScroll extends React.Component<InfiniteScrollProps, {}> {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         {this.props.children}
         <div ref={i => this.sentinel = i} />
-      </div>
+      </React.Fragment>
     );
   }
 }
